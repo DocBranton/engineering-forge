@@ -1,0 +1,7 @@
+node_modules/
+dist/
+public/build-info.json
+.env
+visual-screenshots/
+playwright-report/
+test-results/
