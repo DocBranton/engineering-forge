@@ -1,0 +1,4 @@
+command: ["npm", "run", "start"]
+env:
+  - name: FORGE_MODE
+    value: "demo"

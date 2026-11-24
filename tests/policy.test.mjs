@@ -1,0 +1,1 @@
+import {test} from "node:test";import assert from "node:assert/strict";import {assertDemoMode} from "../server/policy.mjs";test("only explicit demo mode permitted",()=>{assert.doesNotThrow(()=>assertDemoMode("demo"));for(const mode of [undefined,"production","operational",""])assert.throws(()=>assertDemoMode(mode));});
