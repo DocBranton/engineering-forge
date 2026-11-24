@@ -11,7 +11,8 @@
     "build": "node scripts/build-info.mjs && vite build",
     "start": "node server/index.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "test:visual": "playwright test"
   },
   "dependencies": {
     "@databricks/appkit": "0.104.0",
@@ -23,6 +24,7 @@
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "typescript": "5.9.3",
-    "vite": "7.2.4"
+    "vite": "7.2.4",
+    "@playwright/test": "1.56.1"
   }
 }
